@@ -5,7 +5,7 @@ function CalculateBMI(){
 
     const heightValue = parseFloat(height.value);
     const weightValue = parseFloat(weight.value);
-    if(isNaN(heightValue || isNaN(weightValue))) {
+    if(isNaN(heightValue) || isNaN(weightValue)) {
         result.innerHTML = "Please enter a valid number";
         return;
     } else{
